@@ -25,6 +25,6 @@ FROM
     JOIN `Результаты экзаменов` AS e
     USING (`Номер зачетной книжки`)
     JOIN GroupAVG AS ga
-    USING(`Группа`)
+    USING (`Группа`)
 GROUP BY
     s.`ФИО`, s.`Группа`, ga.`Средняя оценка по группе`;
